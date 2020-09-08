@@ -1,0 +1,17 @@
+<view>
+
+<!-- tab导航栏 -->
+<scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+  <view class="tab-item {{currentTab == index ? 'tab-active' : ''}}" data-current="{{index}}" bindtap="swichNav" wx:for="{{tabName}}">{{item.name}}</view>
+</scroll-view>
+
+<!-- 主体内容 -->
+<swiper current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx" class="tab-content">
+
+  <swiper-item wx:for="{{tabName.length}}"><!-- 当几个页面样式一样时，可以用wx:for循环遍历重复出来 -->
+    <scroll-view scroll-x="false" scroll-y="true" class="scoll-h" enable-back-to-top="true">
+     <view>{{choosedTabInformation}}</view>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+</view>
