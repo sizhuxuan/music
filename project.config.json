@@ -34,7 +34,7 @@
   },
   "appid": "wx822aa814eeb93897",
   "projectname": "Carpool",
-  "libVersion": "2.8.1",
+  "libVersion": "2.12.2",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {

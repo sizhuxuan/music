@@ -1,50 +1,38 @@
 {
   "pages": [
-    "pages/home/home",
-    "pages/publish/publish",
-    "pages/profile/profile",
-    "pages/test/test",
-    
-    "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/playlist/playlist",
+    "pages/blog/blog",
+    "pages/profile/profile"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "拼车",
-    "navigationBarTextStyle": "black"
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#d43c43",
+    "navigationBarTitleText": "音乐",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
+    "color": "#474747",
+    "selectedColor": "#d43c33",
+    "borderStyle":"white",
     "list": [
       {
-        "pagePath": "pages/home/home",
-        "text": "首页",
-        "iconPath":"images/icon_component.png",
-        "selectedIconPath":"images/icon_component_HL.png"
+        "pagePath": "pages/playlist/playlist",
+        "text": "音乐",
+        "iconPath":"images/music.png",
+        "selectedIconPath":"images/music_actived.png"
       },
       {
-        "pagePath": "pages/publish/publish",
+        "pagePath": "pages/blog/blog",
         "text": "发布",
-        "iconPath":"images/icon_API.png",
-        "selectedIconPath":"images/icon_API_HL.png"
+        "iconPath":"images/blog.png",
+        "selectedIconPath":"images/blog_actived.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "我的",
-        "iconPath":"images/icon_cloud.png",
-        "selectedIconPath":"images/icon_cloud_HL.png"
+        "iconPath":"images/profile.png",
+        "selectedIconPath":"images/profile_actived.png"
       }
     ]
   },
