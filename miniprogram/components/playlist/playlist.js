@@ -33,6 +33,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    // 点击推荐音乐，导航到音乐列表页
+    gotoMusicList() {
+      wx.navigateTo({
+        url: `../../pages/musicList/musicList?playlistId=${this.properties.playlist.id}`,
+      })
+    },
+
     _tranNumber(num, point) {
       let numStr = num.toString().split('.')[0]
       if (numStr.length < 6) {

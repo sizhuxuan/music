@@ -10,7 +10,7 @@
     "minified": true,
     "newFeature": true,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -19,7 +19,7 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
+    "useMultiFrameRuntime": false,
     "useApiHook": false,
     "babelSetting": {
       "ignore": [],
@@ -53,13 +53,32 @@
     "game": {
       "list": []
     },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
     "miniprogram": {
-      "current": 0,
+      "current": -1,
       "list": [
         {
           "id": -1,
           "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide"
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": 1,
+          "name": "pages/demodemo",
+          "pathName": "pages/demo/demo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "pages/musicList/musicList",
+          "pathName": "pages/musicList/musicList",
+          "query": "playlistId=3175286632",
+          "scene": null
         }
       ]
     }
