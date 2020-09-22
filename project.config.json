@@ -37,6 +37,7 @@
   "libVersion": "2.12.2",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "current": -1,
@@ -77,6 +78,13 @@
           "id": 2,
           "name": "pages/musicList/musicList",
           "pathName": "pages/musicList/musicList",
+          "query": "playlistId=3175286632",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/player/player",
+          "pathName": "pages/player/player",
           "query": "playlistId=3175286632",
           "scene": null
         }

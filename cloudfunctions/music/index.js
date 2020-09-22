@@ -41,5 +41,19 @@ exports.main = async (event, context) => {
     })
   })
 
+  app.router('musicUrl', async (ctx, next) => {
+    ctx.body = await rp(BASE_URL + '/song/url?id=' + parseInt(event.musicId)).then((res) => {
+      return JSON.parse(res)
+    })
+  })
+
+  app.router('lyric', async (ctx, next) => {
+    console.log(BASE_URL + '/lyric?id=' + parseInt(event.musicId))
+    ctx.body = await rp(BASE_URL + '/lyric?id=' + parseInt(event.musicId)).then((res) => {
+      console.log("lyric:",res)
+      return JSON.parse(res)
+    })
+  })
+
   return app.serve()
 }
